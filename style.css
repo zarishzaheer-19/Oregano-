@@ -1,5 +1,19 @@
+/* basic structure*/
 *{
   margin:0;
   padding:0;
   box-size:border-box;
+}
+/*body which has font and background*/
+body{
+  font:Arial,sans-serif;
+  background:#f8f8f8;
+}
+/* navigation bar style*/
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:#2E7D32
 }
