@@ -136,3 +136,45 @@ nav{
     color: white;
     border: none;
 }
+.menu{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.food-card{
+    width: 250px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.food-card img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.food-card h3{
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.price{
+    color: #2E7D32;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.food-card button{
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
