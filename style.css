@@ -46,3 +46,21 @@ nav{
     font-size: 40px;
     font-family: Georgia, serif;
 }
+.nav-icons{
+    display: flex;
+    gap: 15px;
+}
+.icon-btn{
+    width: 55px;
+    height: 55px;
+
+    border: 2px solid #ddd;
+
+    background: white;
+
+    border-radius: 18px;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
