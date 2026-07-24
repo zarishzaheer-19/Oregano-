@@ -114,3 +114,25 @@ nav{
 
     margin: auto;
   }
+.categories{
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category{
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.active{
+    background: #2E7D32;
+    color: white;
+    border: none;
+}
