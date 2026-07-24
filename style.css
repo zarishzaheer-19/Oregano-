@@ -69,44 +69,46 @@ body{
     cursor: pointer;
 }
 .hero{
-    padding: 30px 20px;
+    padding: 30px;
 }
 
-.hero-content{
-    background: #2E7D32;
+.hero-card{
+    background:#2F6D2D;
     color: white;
 
-    border-radius: 35px;
+    border-radius: 38px;
 
-    padding: 60px 30px;
+    padding: 55px 35px;
 
     text-align: center;
+
+  min-height:480px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .order-btn{
-    background: #5b8c51;
+    background:#6F7649;
 
     color: white;
 
     border: none;
 
-    padding: 12px 25px;
+    padding: 12px 26px;
 
-    border-radius: 30px;
+    border-radius: 25px;
 
     font-size: 18px;
 
     margin-bottom: 25px;
 
     cursor: pointer;
+  font-weight:600;
+  idth:max-content;
+    margin:0 auto 40px;
 }
-.settings{
-  border:none;
-    width:auto;
-    height:auto;
-    font-size:24px;
 
-}
 
 .hero-content h2{
     font-size: 48px;
