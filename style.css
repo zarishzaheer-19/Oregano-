@@ -45,24 +45,26 @@ body{
 }
 
 .logo h1{
-    font-size: 40px;
-    font-family: Georgia, serif;
+    font-size: 48px;
+  color:#222;
+  font-family: 'Cormorant Garamond, serif;
 }
 .nav-icons{
     display: flex;
-    gap: 15px;
+    gap: 18px;
+  align-items:center;
 }
 .icon-btn{
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
 
-    border: 2px solid #ddd;
+    border: 2px solid #E6E3DC;
 
     background: white;
 
-    border-radius: 18px;
+    border-radius: 22px;
 
-    font-size: 22px;
+    font-size: 24px;
 
     cursor: pointer;
 }
@@ -97,6 +99,13 @@ body{
     margin-bottom: 25px;
 
     cursor: pointer;
+}
+.settings{
+  border:none;
+    width:auto;
+    height:auto;
+    font-size:24px;
+
 }
 
 .hero-content h2{
