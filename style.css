@@ -76,16 +76,17 @@ body{
     background:#2F6D2D;
     color: white;
 
-    border-radius: 38px;
+    border-radius: 40px;
 
-    padding: 55px 35px;
+    padding: 40px;
 
     text-align: center;
-
+overflow:hidden;
   min-height:380px;
     display:flex;
     flex-direction:column;
     justify-content:center;
+  gap:30px;
 }
 
 .order-btn{
@@ -281,3 +282,17 @@ body{
     font-size:30px;
     margin-right:10px;
   }
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:320px;
+    max-width:100%;
+}
