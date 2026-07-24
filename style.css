@@ -22,7 +22,7 @@ body{
 .logo{
     display: flex;
     align-items: center;
-    gap: 18x;
+    gap: 18px;
 }
 .logo-circle{
     width: 56px;
@@ -47,7 +47,7 @@ body{
 .logo h1{
     font-size: 48px;
   color:#222;
-  font-family: 'Cormorant Garamond, serif;
+  font-family: 'Cormorant Garamond',serif;
 }
 .nav-icons{
     display: flex;
@@ -105,12 +105,12 @@ body{
 
     cursor: pointer;
   font-weight:600;
-  idth:max-content;
+  width:max-content;
     margin:0 auto 40px;
 }
 
 
-.hero-content h2{
+.hero-card h2{
     font-size: 48px;
 
     line-height: 1.2;
@@ -149,7 +149,7 @@ body{
     overflow-x:auto;
     scrollbar-width:none;
 }
-category-container::-webkit-scrollbar{
+.category-container::-webkit-scrollbar{
     display:none;
 }
 
