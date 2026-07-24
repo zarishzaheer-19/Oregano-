@@ -64,3 +64,53 @@ nav{
 
     cursor: pointer;
 }
+.hero{
+    padding: 30px 20px;
+}
+
+.hero-content{
+    background: #2E7D32;
+    color: white;
+
+    border-radius: 35px;
+
+    padding: 60px 30px;
+
+    text-align: center;
+}
+
+.order-btn{
+    background: #5b8c51;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+
+    cursor: pointer;
+}
+
+.hero-content h2{
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    max-width: 600px;
+
+    margin: auto;
+  }
