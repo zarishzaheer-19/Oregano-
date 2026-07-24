@@ -2,32 +2,33 @@
 *{
   margin:0;
   padding:0;
-  box-size:border-box;
+  box-sizing:border-box;
 }
 /*body which has font and background*/
 body{
-  font:Arial,sans-serif;
-  background:#f8f6f2;
+  font-family:'Poppins',sans-serif;
+  background:#F6F2EC;
 }
 /* navigation bar style*/
-nav{
+.navbar{
+  height:90px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 20px;
+  padding:0px 30px;
   background:white;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #e8e8e8; 
 }
 .logo{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 18x;
 }
 .logo-circle{
-    width: 55px;
-    height: 55px;
+    width: 56px;
+    height: 56px;
 
-    background: #2E7D32;
+    background:#2F6D2D;
 
     border-radius: 50%;
 
@@ -37,9 +38,10 @@ nav{
 
     color: white;
 
-    font-size: 30px;
+    font-size: 34px;
 
-    font-weight: bold;
+    font-family:'Cormorant Garamond',serif;
+
 }
 
 .logo h1{
