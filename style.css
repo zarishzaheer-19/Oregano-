@@ -82,7 +82,7 @@ body{
 
     text-align: center;
 
-  min-height:480px;
+  min-height:380px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -111,7 +111,7 @@ body{
 
 
 .hero-card h2{
-    font-size: 48px;
+    font-size: 58px;
 
     line-height: 1.2;
 
