@@ -77,18 +77,18 @@ body{
 .hero-card{
     background:#2F6D2D;
     border-radius:40px;
-    padding:40px;
+    padding:32px;
 
     display:flex;
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
 
-    gap:40px;
+    gap:24px;
 
     overflow:hidden;
 
-    min-height:380px;
+    min-height:340px;
 }
 
 
