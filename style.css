@@ -289,24 +289,20 @@ body{
     flex:1;
 }
 
-.hero-image{
-    flex:1;
-    display:flex;
-    justify-content:flex-end;
-  align-items:flex-end;
-}
-
-.hero-image img{
-    width:220px;
-    max-width:100%;
-  display:block;
-}
+.
 @media (max-width:768px){
 
-.hero-card{
-    flex-direction:column;
+
+    .hero-card{
+    background:#2F6D2D;
+    border-radius:40px;
+    padding:50px 35px;
     text-align:center;
-}
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:430px;
+    }
 
 .hero-card h2{
     font-size:42px;
