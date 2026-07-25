@@ -292,12 +292,14 @@ body{
 .hero-image{
     flex:1;
     display:flex;
-    justify-content:center;
+    justify-content:flex-end;
+  align-items:flex-end;
 }
 
 .hero-image img{
-    width:320px;
+    width:220px;
     max-width:100%;
+  display:block;
 }
 @media (max-width:768px){
 
