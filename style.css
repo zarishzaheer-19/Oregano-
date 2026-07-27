@@ -204,7 +204,7 @@ body{
 
 .product-card{
     background:#fff;
-    border-radius:25px;
+    border-radius:30px;
     overflow:hidden;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
   transition:.3s;
@@ -216,8 +216,7 @@ body{
 .product-image{
     position:relative;
     background:#F7ECE4;
-    height:280px;
-
+    height:220px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -258,26 +257,30 @@ body{
 
 .product-info h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:42px;
+    font-size:28px;
     color:#222;
     margin-bottom:15px;
+    line-height:1.2;
 }
 
 .product-info p{
     color:#666;
-    font-size:18px;
+    font-size:15px;
+  line-height:1.5;
     margin-bottom:25px;
 }
 
 .order-button{
     width:100%;
-    padding:18px;
-    border:2px solid #DDD;
-    background:white;
-    border-radius:40px;
-    font-size:22px;
+    padding:15px;
+    border:2px solid #D8D8D8;
+    background:#fff;
+    border-radius:35px;
+    font-size:18px;
     font-family:'Cormorant Garamond',serif;
     cursor:pointer;
+  font-weight:700;
+  transition:.3s;
 }
 
 .order-button span{
