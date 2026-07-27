@@ -189,7 +189,7 @@ img{
 .product-image{
     position:relative;
     background:#F8EFE8;
-    height:230px;
+    height:200px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -212,7 +212,7 @@ img{
 }
 
 .product-info{
-    padding:24px;
+    padding:20px;
 }
 
 .product-info h5{
@@ -224,7 +224,7 @@ img{
 
 .product-info h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:30px;
+    font-size:32px;
     color:#222;
     margin-bottom:10px;
 }
