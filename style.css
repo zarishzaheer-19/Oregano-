@@ -78,7 +78,7 @@ body{
 .hero-card{
     background:#2F6D2D;
     border-radius:40px;
-    padding:32px;
+    padding:30px;
 
     display:flex;
     flex-direction:row;
@@ -89,24 +89,21 @@ body{
 
     overflow:hidden;
 
-    min-height:340px;
+    min-height:280px;
 }
 
 
-.order-btn{
     .order-btn{
-    background:#6F7649;
-    color:white;
+    background:#7B7A4A;
+    color:#fff;
     border:none;
-    padding:10px 22px;
+    padding:8px 18px;
     border-radius:25px;
-    font-size:16px;
+    font-size:13px;
     font-weight:600;
-    cursor:pointer;
-    width:max-content;
-    margin-bottom:24px;
+    display:block;
+    margin:0 auto 20px;
     }
-}
 .order-button:hover{
     background:#2F6D2D;
     color:white;
@@ -114,10 +111,10 @@ body{
 
 
 .hero-card h2{
-    font-size: 42px;
+    font-size: 34px;
     font-weight:700;
-    line-height:1.15;
-    margin-bottom:16px;
+    line-height:1.2;
+    margin: 15px 0;
   font-family:'Cormorant Garamond', serif;
 }
 
@@ -133,9 +130,10 @@ body{
 
 .hero-card p{
     color:#F5F5F5;
-    font-size:16px;
-    line-height:1.6;
+    font-size:14px;
+    line-height:1.8;
     max-width:280px;
+  margin:0 auto;
   }
   }
 
