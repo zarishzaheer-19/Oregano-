@@ -9,6 +9,10 @@ body{
   font-family:'Poppins',sans-serif;
   background:#F6F2EC;
 }
+img{
+    max-width:100%;
+    display:block;
+}
 /* navigation bar style*/
 .navbar{
   display:flex;
@@ -82,9 +86,9 @@ body{
     margin-bottom:24px;
     cursor:pointer;  
     }
-.order-button:hover{
-    background:#2F6D2D;
-    color:#fff;
+.order-btj:hover{
+    background:#55603A;
+
 }
 
 .hero-card h2{
@@ -112,7 +116,7 @@ body{
     max-width:280px;
   margin:0 auto;
   }
-  }
+  
 
 .categories{
     padding: 0 20px 24px;
@@ -234,7 +238,7 @@ body{
 
 .order-button{
     width:100%;
-    padding:52px;
+    padding:18px;
     border:2px solid #E2E2E2;
     background:#fff;
     border-radius:999px;
@@ -253,7 +257,7 @@ body{
     flex:1;
 }
 
-.
+
 @media (max-width:768px){
 
 
@@ -351,4 +355,5 @@ font-weight:700;
     color:#2F6D2D;
     font-weight:600;
   
+}
 }
