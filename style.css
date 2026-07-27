@@ -84,7 +84,7 @@ body{
     }
 .order-button:hover{
     background:#2F6D2D;
-    color:white;
+    color:#fff;
 }
 
 .hero-card h2{
@@ -169,15 +169,14 @@ body{
 }
 
 .products{
-    padding:30px;
+    padding:0 20px 30px;
 }
 
 .product-card{
     background:#fff;
     border-radius:30px;
     overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-  transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 .product-card:hover{
     transform:translateY(-8px);
@@ -185,67 +184,60 @@ body{
 
 .product-image{
     position:relative;
-    background:#F7ECE4;
-    height:220px;
+    background:#F8EFE8;
+    height:230px;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .product-image img{
-    width:240px;
-    height:auto;
+    width:190px;
     object-fit:contain;
 }
 
 .price{
     position:absolute;
-    top:18px;
-    right:18px;
-
-    background:white;
-
-    padding:10px 18px;
-
-    border-radius:30px;
-
+    top:16px;
+    right:16px;
+    background:#fff;
+    padding:8px 16px;
+    border-radius:999px;
     font-weight:600;
-
-    font-size:18px;
+    font-size:15px;
 }
 
 .product-info{
-    padding:25px;
+    padding:24px;
 }
 
 .product-info h5{
     color:#C56F4E;
-    font-size:16px;
+    font-size:14px;
     letter-spacing:2px;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .product-info h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:28px;
+    font-size:30px;
     color:#222;
-    margin-bottom:15px;
-    line-height:1.2;
+    margin-bottom:10px;
 }
 
 .product-info p{
     color:#666;
     font-size:15px;
-  line-height:1.5;
-    margin-bottom:25px;
+    line-height:1.6;
+    margin-bottom:22px;
 }
 
 .order-button{
     width:100%;
-    padding:15px;
-    border:2px solid #D8D8D8;
+    padding:52px;
+    border:2px solid #E2E2E2;
     background:#fff;
-    border-radius:35px;
+    border-radius:999px;
     font-size:18px;
     font-family:'Cormorant Garamond',serif;
     cursor:pointer;
@@ -254,8 +246,8 @@ body{
 }
 
 .order-button span{
-    font-size:30px;
-    margin-right:10px;
+    font-size:22px;
+    margin-right:8px;
   }
 .hero-text{
     flex:1;
