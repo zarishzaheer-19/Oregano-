@@ -320,40 +320,41 @@ font-weight:700;
     font-weight:600;
 }
 
-.popular-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
+.popular-img{
+    background:#F8EFE8;
+    border-radius:20px;
+    height:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:15px;
 }
 
-.popular-card{
-    background:#fff;
-    border-radius:24px;
-    padding:18px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+.popular-img img{
+    width:90px;
+    height:auto;
 }
 
-.popular-card:hover{
-    transform:translateY(-5px);
+.popular-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:12px;
 }
 
-.popular-card img{
-    width:110px;
-    height:110px;
-    object-fit:contain;
-}
-
-.popular-card h3{
-    margin:12px 0 6px;
-    font-size:18px;
-    font-family:'Cormorant Garamond',serif;
-}
-
-.popular-card p{
+.popular-bottom span{
     color:#2F6D2D;
     font-weight:600;
-  
+}
+
+.add-btn{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:50%;
+    background:#2F6D2D;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
 }
 }
