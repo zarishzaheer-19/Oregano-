@@ -411,4 +411,25 @@ font-weight:700;
         font-size:20px;
     }
   }
+  .view-menu{
+    padding:0 20px 30px;
+}
+
+.view-menu-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:#2F6D2D;
+    color:#fff;
+    text-decoration:none;
+    padding:18px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-menu-btn:hover{
+    background:#245523;
+  }
 }
