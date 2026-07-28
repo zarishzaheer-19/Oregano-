@@ -576,4 +576,43 @@ body{
 .checkout-btn:hover{
     background:#245523;
   }
+
+  /* PROFILE HEADER */
+
+.profile-header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.profile-header img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:0 auto 20px;
+    border:5px solid #2F6D2D;
+}
+
+.profile-header h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:36px;
+    color:#222;
+    margin-bottom:8px;
+}
+
+.profile-header p{
+    color:#777;
+    margin-bottom:20px;
+}
+
+.edit-profile-btn{
+    background:#2F6D2D;
+    color:#fff;
+    border:none;
+    padding:14px 30px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
 }
