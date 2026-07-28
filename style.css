@@ -432,4 +432,43 @@ font-weight:700;
 .view-menu-btn:hover{
     background:#245523;
   }
+  /* Bottom Navigation */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:12px 0;
+    box-shadow:0 -4px 15px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.bottom-nav a{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    color:#777;
+    font-size:12px;
+    gap:5px;
+}
+
+.bottom-nav i{
+    font-size:22px;
+}
+
+.bottom-nav a.active{
+    color:#2F6D2D;
+    font-weight:600;
+}
+
+/* Prevent content from hiding behind the fixed footer */
+body{
+    padding-bottom:90px;
+}
 }
