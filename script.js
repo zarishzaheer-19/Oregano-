@@ -31,3 +31,24 @@ function updateCart() {
     subtotal.textContent = `Rs ${sub}`;
     total.textContent = `Rs ${sub + delivery}`;
 }
+
+const buttons = document.querySelectorAll(".category");
+const products = document.querySelectorAll(".product-card");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        buttons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const category = button.dataset.category;
+
+        products.forEach(product => {
+            if (category === "All" || product.dataset.category === category) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
+            }
+        });
+    });
+});
