@@ -1,165 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OREGANO </title>
-    <meta name="description" content="Order fresh shawarmas, burgers, broast and fries from Oregano.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oregano — Fresh, Fast & Served Warm</title>
+    <meta name="description" content="Order fresh shawarmas, burgers, broast and fries from Oregano." />
+    <meta name="author" content="Oregano" />
+    <meta name="theme-color" content="#ffffff" />
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- SEO / Social -->
+    <link rel="canonical" href="https://your-site.example.com/" />
+    <meta property="og:title" content="Oregano — Fresh, Fast & Served Warm" />
+    <meta property="og:description" content="Order fresh shawarmas, burgers, broast and fries from Oregano." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-site.example.com/" />
+    <meta property="og:site_name" content="Oregano" />
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Structured data for the site (basic) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Oregano",
+      "description": "Order fresh shawarmas, burgers, broast and fries from Oregano.",
+      "url": "https://your-site.example.com/"
+    }
+    </script>
   </head>
-  <body>
-    <header class="navbar">
-      <a href="index.html" class="logo">
-        <div class="logo-circle">O</div>
-        <h1>Oregano</h1>
-      </a>
-        <div class="nav-icons">
-          <button class="icon-btn" aria-label="Shopping cart" onclick="window.location.href='cart.html'">
-    <i class="fa-solid fa-bag-shopping"></i>
-</button>
 
-<button class="icon-btn" aria-label="Settings">
-<i class="fa-solid fa-gear"></i>
-</button>
- </div>
+  <body>
+    <header class="navbar" role="banner">
+      <div class="container">
+        <a href="index.html" class="logo" aria-label="Oregano home">
+          <div class="logo-circle" aria-hidden="true">O</div>
+          <h1 class="site-title">Oregano</h1>
+        </a>
+
+        <nav class="site-controls" aria-label="Site controls">
+          <a class="icon-btn" href="cart.html" aria-label="Shopping cart">
+            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+          </a>
+
+          <button class="icon-btn" aria-label="Settings" type="button">
+            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+          </button>
+        </nav>
+      </div>
     </header>
 
-    <main>
-          <section class="hero">
+    <main id="content">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-card">
+          <button class="order-btn" type="button" aria-label="Order now">Order Now</button>
 
-    <div class="hero-card">
-    <button class="order-btn">Order Now</button>
-
-        <h2>
-            <span class="dark-text">Fresh, Fast &</span><br>
+          <h2 id="hero-heading">
+            <span class="dark-text">Fresh, Fast &</span><br />
             <span class="light-text">Served Warm</span>
-        </h2>
+          </h2>
 
-        <p>
-            Enjoy delicious food made fresh every day.
-            Order your favorite meals in just a few clicks.
-        </p>
-      </div>
-      
-          </section>
-          <section class="categories">
+          <p>Enjoy delicious food made fresh every day. Order your favorite meals in just a few clicks.</p>
+        </div>
+      </section>
 
-    <div class="category-container">
-
-        <button type="button" class="category active" data-category="All">All Menu</button>
-      
-     <button type="button" class="category" data-category="Deals">Deals</button>
-
-        <button type="button" class="category" data-category="Rolls">Rolls & Paratha</button>
-
-        <button type="button" class="category" data-category="Shawarma">Shawarma</button>
-
-        <button type="button" class="category" data-category="Fries">Fries</button>
-
-        <button type="button" class="category" data-category="Broast">Broast</button>
-
-        <button type="button" class="category" data-category="Burger">Burger</button>
-
-    </div>
-
-    <div class="scroll-line">
-        <div class="scroll-fill"></div>
-    </div>
- </section>
-      
-<section class="products">
-<div class="product-card" data-category="Broast">
-
-        <div class="product-image">
-            <span class="price">Rs 550</span>
-            <img src="crispy-fried-chicken-plate-with-salad-carrot.jpg" alt="Chicken Broast">
+      <section class="categories" aria-label="Menu categories">
+        <div class="category-container" role="tablist" aria-label="Menu categories">
+          <button type="button" class="category active" role="tab" aria-selected="true" data-category="all">All Menu</button>
+          <button type="button" class="category" role="tab" aria-selected="false" data-category="deals">Deals</button>
+          <button type="button" class="category" role="tab" aria-selected="false" data-category="rolls">Rolls & Paratha</button>
+          <button type="button" class="category" role="tab" aria-selected="false" data-category="shawarma">Shawarma</button>
+          <button type="button" class="category" role="tab" aria-selected="false" data-category="fries">Fries</button>
+          <button type="button" class="category" role="tab" aria-selected="false" data-category="broast">Broast</button>
+          <button type="button" class="category" role="tab" aria-selected="false" data-category="burger">Burger</button>
         </div>
 
-        <div class="product-info">
-            <h5>BROAST</h5>
-            <h2>Chicken Broast 2 Piece</h2>
-            <p>Two pieces of crispy broasted chicken</p>
-            <button class="order-button"><span>+</span> Add to Order </button>
+        <div class="scroll-line" aria-hidden="true">
+          <div class="scroll-fill"></div>
         </div>
+      </section>
 
-    </div>
+      <section class="products" aria-label="Products">
+        <!-- Use article + figure to improve semantics -->
+        <article class="product-card" data-category="broast" itemscope itemtype="https://schema.org/Product">
+          <figure class="product-image">
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="PKR" /><span itemprop="price">550</span> Rs</span>
+            <img src="images/crispy-fried-chicken-plate-with-salad-carrot.jpg" alt="Two piece chicken broast" loading="lazy" itemprop="image" />
+            <figcaption class="visually-hidden">Chicken Broast 2 Piece — Rs 550</figcaption>
+          </figure>
 
-  <div class="product-card" data-category="Fries">
+          <div class="product-info">
+            <h3 itemprop="category">BROAST</h3>
+            <h4 itemprop="name">Chicken Broast 2 Piece</h4>
+            <p itemprop="description">Two pieces of crispy broasted chicken</p>
+            <button class="order-button" type="button" aria-label="Add Chicken Broast 2 Piece to cart for Rs 550" data-name="Chicken Broast 2 Piece" data-price="550">
+              <span aria-hidden="true">+</span> Add to Order
+            </button>
+          </div>
+        </article>
 
-        <div class="product-image">
-            <span class="price">Rs 250</span>
-            <img src="#" alt="Masala Fries">
-        </div>
+        <article class="product-card" data-category="fries" itemscope itemtype="https://schema.org/Product">
+          <figure class="product-image">
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="PKR" /><span itemprop="price">250</span> Rs</span>
+            <img src="images/masala-fries.jpg" alt="Masala Fries" loading="lazy" itemprop="image" />
+          </figure>
 
-        <div class="product-info">
-            <h5>FRIES</h5>
-            <h2>Masala Fries</h2>
-            <p>Crispy golden fries tossed with our signature masala seasoning.</p>
-            <button class="order-button"><span>+</span> Add to Order </button>
-        </div>
+          <div class="product-info">
+            <h3 itemprop="category">FRIES</h3>
+            <h4 itemprop="name">Masala Fries</h4>
+            <p itemprop="description">Crispy golden fries tossed with our signature masala seasoning.</p>
+            <button class="order-button" type="button" aria-label="Add Masala Fries to cart for Rs 250" data-name="Masala Fries" data-price="250">
+              <span aria-hidden="true">+</span> Add to Order
+            </button>
+          </div>
+        </article>
 
-  </div>
+        <article class="product-card" data-category="fries" itemscope itemtype="https://schema.org/Product">
+          <figure class="product-image">
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="PKR" /><span itemprop="price">250</span> Rs</span>
+            <img src="images/plain-fries.jpg" alt="Plain Fries" loading="lazy" itemprop="image" />
+          </figure>
 
-  <div class="product-card" data-category="Fries">
+          <div class="product-info">
+            <h3 itemprop="category">FRIES</h3>
+            <h4 itemprop="name">Plain Fries</h4>
+            <p itemprop="description">Freshly fried crispy potato fries.</p>
+            <button class="order-button" type="button" aria-label="Add Plain Fries to cart for Rs 250" data-name="Plain Fries" data-price="250">
+              <span aria-hidden="true">+</span> Add to Order
+            </button>
+          </div>
+        </article>
 
-        <div class="product-image">
-            <span class="price">Rs 250</span>
-            <img src="" alt="Plain Fries">
-        </div>
+        <article class="product-card" data-category="fries" itemscope itemtype="https://schema.org/Product">
+          <figure class="product-image">
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="PKR" /><span itemprop="price">550</span> Rs</span>
+            <img src="images/loaded-fries.jpg" alt="Loaded Fries with cheese and chicken" loading="lazy" itemprop="image" />
+          </figure>
 
-        <div class="product-info">
-            <h5>FRIES</h5>
-            <h2>Plain Fries</h2>
-            <p>Freshly fried crispy potato fries.</p>
-            <button class="order-button"><span>+</span> Add to Order </button>
-        </div>
+          <div class="product-info">
+            <h3 itemprop="category">FRIES</h3>
+            <h4 itemprop="name">Loaded Fries</h4>
+            <p itemprop="description">Golden crispy fries topped with cheese, chicken, and our special sauces.</p>
+            <button class="order-button" type="button" aria-label="Add Loaded Fries to cart for Rs 550" data-name="Loaded Fries" data-price="550">
+              <span aria-hidden="true">+</span> Add to Order
+            </button>
+          </div>
+        </article>
 
-  </div>
+        <article class="product-card" data-category="shawarma" itemscope itemtype="https://schema.org/Product">
+          <figure class="product-image">
+            <span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"><meta itemprop="priceCurrency" content="PKR" /><span itemprop="price">500</span> Rs</span>
+            <img src="images/arabic-shawarma.jpg" alt="Arabic Shawarma" loading="lazy" itemprop="image" />
+          </figure>
 
-  <div class="product-card" data-category="Fries">
-
-    <div class="product-image">
-        <span class="price">Rs 550</span>
-        <img src="loaded-fries.jpg" alt="Loaded Fries">
-    </div>
-
-    <div class="product-info">
-        <h5>FRIES</h5>
-        <h2>Loaded Fries</h2>
-        <p>Golden crispy fries topped with cheese, chicken, and our special sauces.</p>
-
-        <button class="order-button">
-            <span>+</span> Add to Order
-        </button>
-    </div>
-
-  </div>
-
-  <div class="product-card" data-category="Shawarma">
-
-    <div class="product-image">
-        <span class="price">Rs 500</span>
-        <img src="arabic-shawarma.jpg" alt="Arabic Shawarma">
-    </div>
-
-    <div class="product-info">
-        <h5>SHAWARMA</h5>
-        <h2>Arabic Shawarma</h2>
-        <p>Juicy grilled chicken wrapped in soft Arabic bread with garlic sauce and fresh vegetables.</p>
-
-        <button class="order-button">
-            <span>+</span> Add to Order
-        </button>
-    </div>
-  </div>
+          <div class="product-info">
+            <h3 itemprop="category">SHAWARMA</h3>
+            <h4 itemprop="name">Arabic Shawarma</h4>
+            <p itemprop="description">Juicy grilled chicken wrapped in soft Arabic bread with garlic sauce and fresh vegetables.</p>
+            <button class="order-button" type="button" aria-label="Add Arabic Shawarma to cart for Rs 500" data-name="Arabic Shawarma" data-price="500">
+              <span aria-hidden="true">+</span> Add to Order
+            </button>
+          </div>
+        </article>
+      </section>
     </main>
-  
-    <script src="script.js"></script>
+
+    <noscript>
+      <p>Please enable JavaScript to use the full ordering experience.</p>
+    </noscript>
+
+    <!-- Move script to the end and defer execution of heavy scripts inside script.js -->
+    <script src="script.js" defer></script>
   </body>
 </html>
